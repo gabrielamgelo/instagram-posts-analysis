@@ -4,7 +4,7 @@ import plotly.express as px
 import plotly.graph_objs as go
 
 
-df = pd.read_csv("C:/Users/gabri/Desktop/Workspace/Projetos/Book Data/pages/igposts_dataset_treated.csv")
+df = pd.read_csv("igposts_dataset_treated.csv")
 
 # Criando coluna com contagem de hashtags
 
@@ -124,7 +124,7 @@ med_hash = df['hashtag_count'].mean().round()
 import collections
 import re
 
-dft = pd.read_csv("C:/Users/gabri/Desktop/Workspace/Projetos/Book Data/pages/df_text_tratado.csv")
+dft = pd.read_csv("df_text_tratado.csv")
 
 hashtags = ' '.join(df['hashtags']).split()
 counter_hashtags = collections.Counter(hashtags)
@@ -139,7 +139,7 @@ df_top_200['Hashtag'] = df_top_200['Hashtag'].apply(remove_special_characters)
 
 # Hashtags com mais likes
 
-dfh = pd.read_csv("C:/Users/gabri/Desktop/Workspace/Projetos/Book Data/pages/hashtags_likes.csv")
+dfh = pd.read_csv("hashtags_likes.csv")
 
 
 # Sidebar
