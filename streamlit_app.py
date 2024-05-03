@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objs as go
 
 
 df = pd.read_csv("C:\\Users\\gabri\\Desktop\\Workspace\\Projetos\\Book Data\\igposts_dataset_treated.csv")
