@@ -2,23 +2,28 @@
 
 This repository contains tools and scripts to scrape data from Instagram, clean, transform, and analyse it using a Jupyter Notebook, and visualize the results using a Streamlit web application.
 
+With this, you can get information such as, average likes per post, amount of posts per profile, posts per date, day of week with more posts, most used hashtags and more! 
+
+I used 15 brazilian book publishers as an example. 
+
 ## Features:
 
-    ### **Instagram Scraper:**
+    Instagram Scraper:
         Python scripts to scrape data from Instagram including user profiles, posts, number of comments, number of likes and hashtags.
         Utilizes Instaloader for data extraction.
 
-    ### **Data Cleaning and Analysis Notebook:**
+    Data Cleaning and Analysis Notebook:
         Jupyter Notebook containing step-by-step instructions to clean, transform, and analyze the scraped Instagram data.
         Includes exploratory data analysis (EDA), data preprocessing techniques, and statistical analysis.
 
-    ### **Streamlit Data Visualization App:**
+    **Streamlit Data Visualization App:
         Interactive web application built with Streamlit to visualize the cleaned Instagram data.
         Provides intuitive visualization tools for exploring insights derived from the data analysis.
 
 ## Repository Structure:
 
     /scraper:
+        
         Contains Python scripts for scraping Instagram data.
         
         You'll need to pip install instaloader in order to use the scraper. 
@@ -28,17 +33,22 @@ This repository contains tools and scripts to scrape data from Instagram, clean,
         The data will be saved in a '.csv' file
 
     /notebook:
+        
         Jupyter Notebook for data cleaning, transformation, and analysis.
+        
         You'll need to change the file path to point to the '.csv' file created by the scraper in order to read it.
         After that, you can just run the notebook and your data will be ready for the streamlit app.
 
     /streamlit_app:
+        
         Streamlit web application for data visualization.
+        
         You'll need to pip install streamlit
         Same as the notebook, you'll need to change the file path to point to the '.csv' files needed to run the app.
         after that, just run 'streamlit run streamlit_app.py' in your terminal.
 
     /dataframes:
+        
         The dataframes I used as an example.
   
 
