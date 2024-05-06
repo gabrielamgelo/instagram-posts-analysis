@@ -4,19 +4,22 @@ This repository contains tools and scripts to scrape data from Instagram, clean,
 
 With this, you can get information such as, average likes per post, amount of posts per profile, posts per date, day of week with more posts, most used hashtags and more! 
 
-I used 15 brazilian book publishers as an example. 
+Her I used 15 brazilian book publishers as an example: https://instagram-posts-analysis-sfzwlr3tpel2fupmyzu66e.streamlit.app/
 
 ## Features:
 
     Instagram Scraper:
+        
         Python scripts to scrape data from Instagram including user profiles, posts, number of comments, number of likes and hashtags.
         Utilizes Instaloader for data extraction.
 
     Data Cleaning and Analysis Notebook:
+        
         Jupyter Notebook containing step-by-step instructions to clean, transform, and analyze the scraped Instagram data.
         Includes exploratory data analysis (EDA), data preprocessing techniques, and statistical analysis.
 
-    **Streamlit Data Visualization App:
+    Streamlit Data Visualization App:
+        
         Interactive web application built with Streamlit to visualize the cleaned Instagram data.
         Provides intuitive visualization tools for exploring insights derived from the data analysis.
 
@@ -79,5 +82,5 @@ For any questions or inquiries, please contact gabrielangelosiq@gmail.com.
 
 Thank you for checking out the Instagram Data Scraper and Analysis project! We hope you find it useful for your data exploration tasks.
 
-Streamlit app: https://instagram-posts-analysis-sfzwlr3tpel2fupmyzu66e.streamlit.app/
+
 
