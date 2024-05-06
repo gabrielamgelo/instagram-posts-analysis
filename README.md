@@ -2,7 +2,7 @@
 
 This repository contains tools and scripts to scrape data from Instagram, clean, transform, and analyse it using a Jupyter Notebook, and visualize the results using a Streamlit web application.
 
-With this, you can get information such as, average likes per post, amount of posts per profile, posts per date, day of week with more posts, most used hashtags and more! 
+With this, you can get information such as: average likes per post, amount of posts per profile, posts per date, day of week with more posts, most used hashtags and more! 
 
 Here I used 15 brazilian book publishers as an example: https://instagram-posts-analysis-sfzwlr3tpel2fupmyzu66e.streamlit.app/
 
