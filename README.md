@@ -80,7 +80,7 @@ Contact:
 
 For any questions or inquiries, please contact gabrielangelosiq@gmail.com.
 
-Thank you for checking out the Instagram Data Scraper and Analysis project! We hope you find it useful for your data exploration tasks.
+
 
 
 
