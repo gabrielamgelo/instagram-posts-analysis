@@ -30,7 +30,7 @@ color_discrete_map = {
 post_by_profile = df['username'].value_counts().reset_index()
 post_by_profile = post_by_profile.sort_values(by='count', ascending=False)
 
-fig_post = px.bar(post_by_profile, x='count', y='username', color='username', color_discrete_map=color_discrete_map, labels={'count': 'Post Count', 'username': 'Username'})
+fig_post = px.bar(post_by_profile, x='count', y='username', color='username', color_discrete_map=color_discrete_map, labels={'count': 'Total of posts', 'username': 'Username'})
 fig_post.update_xaxes(title_text="Total of posts")
 fig_post.update_yaxes(title_text="Profile")
 
@@ -152,9 +152,9 @@ option = st.sidebar.selectbox('Select subject to visualize:',
 
 if option == '📸 Posts':
     selected_option = st.selectbox('Filter by:',
-                                   ['🧑‍💼 Profile', 'Date 📈', 'Day of Week 📅', 'Hour 🕒'],
+                                   ['Profile 🧑‍💼', 'Date 📈', 'Day of Week 📅', 'Hour 🕒'],
                                    key='posts_selectbox')
-    if selected_option == '🧑‍💼 Profile':
+    if selected_option == 'Profile 🧑‍💼':
         st.markdown("# Total Posts by Profile")
         st.plotly_chart(fig_post, use_container_width=True)
 
@@ -174,9 +174,9 @@ if option == '📸 Posts':
 
 elif option == '❤️ Likes':
     selected_option = st.selectbox('Filter by:',
-                                   ['🧑‍💼 Profile', 'Day of Week 📅', 'Hour 🕒'],
+                                   ['Profile 🧑‍💼', 'Day of Week 📅', 'Hour 🕒'],
                                    key='likes_selectbox')
-    if selected_option == '🧑‍💼 Profile':
+    if selected_option == 'Profile 🧑‍💼':
         st.markdown("# Total Likes by Profile")
         st.markdown("#### ***Each post received an average of {} likes.***".format(avg_likes))
         st.plotly_chart(fig_likes, use_container_width=True)
