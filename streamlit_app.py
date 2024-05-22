@@ -11,20 +11,15 @@ df = pd.read_csv("Dataframes/igposts_treated.csv")
 
 color_discrete_map = {
     'editorasextante': '#FFB6C1',  
-    'galerarecord': '#87CEEB',     
-    'editoraelefante': '#FFD700',   
+    'galerarecord': '#87CEEB',        
     'intrinseca': '#98FB98',        
     'plataforma21_': '#FFA07A',     
-    'editoraparalela': '#F08080',   
-    'veruseditora': '#ADD8E6',      
+    'editoraparalela': '#F08080',         
     'editorarocco': '#9370DB',      
     'editoraeuphoria': '#FF6347',   
     'editoraarqueiro': '#20B2AA',   
-    'companhiadasletras': '#FFDAB9',
-    'editoraaleph': '#FFA500',      
-    'editorasuma': '#AFEEEE',       
-    'darksidebooks': '#8FBC8F',     
-    'harpercollinsbrasil': '#FF69B4' 
+    'companhiadasletras': '#FFDAB9',             
+    'darksidebooks': '#8FBC8F',      
 }
 
 post_by_profile = df['username'].value_counts().reset_index()
@@ -56,16 +51,15 @@ fig_comment.update_yaxes(title_text='Total Comments')
 
 # Number of posts by date
 
-date_line = df['date'].value_counts().reset_index()
-date_line.columns = ['date', 'Number of Posts']
-date_line = date_line.sort_values(by='date')
+date_line = df.groupby(['date', 'username']).size().reset_index(name='Number of Posts')
 
+fig_date = px.line(date_line, x='date', y='Number of Posts', color='username',
+              title="Posts by Posting Date and Username",
+              labels={'date': 'Date', 'Number of Posts': 'Number of Posts', 'username': 'Username'})
 
-fig_date = px.line(date_line, x='date', y='Number of Posts', color_discrete_sequence=['lightcyan'], labels={'date': 'Date'})
 
 fig_date.update_xaxes(title_text='Date')
 fig_date.update_yaxes(title_text='Total Posts')
-
 # Posts by hour
 
 df['hour'] = df['hour'].apply(lambda x: f'{x} h')
