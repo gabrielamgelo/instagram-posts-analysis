@@ -4,7 +4,7 @@ This repository contains tools and scripts to scrape data from Instagram, clean,
 
 With this, you can get information such as: average likes per post, amount of posts per profile, posts per date, day of week with more posts, most used hashtags and more! 
 
-Here I used 15 brazilian book publishers as an example: https://instagram-posts-analysis-sfzwlr3tpel2fupmyzu66e.streamlit.app/
+Here I used 10 brazilian book publishers as an example: https://instagram-posts-analysis-sfzwlr3tpel2fupmyzu66e.streamlit.app/
 
 ## Features:
 
