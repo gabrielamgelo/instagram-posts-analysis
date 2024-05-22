@@ -159,7 +159,7 @@ if option == '📸 Posts':
         st.plotly_chart(fig_post, use_container_width=True)
 
     elif selected_option == 'Date 📈':
-        st.markdown("# Posts Posting Day")
+        st.markdown("# Posts by Posting Date")
         st.plotly_chart(fig_date, use_container_width=True)
 
     elif selected_option == 'Day of Week 📅':
