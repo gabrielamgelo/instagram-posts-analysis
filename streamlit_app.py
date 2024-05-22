@@ -54,7 +54,6 @@ fig_comment.update_yaxes(title_text='Total Comments')
 date_line = df.groupby(['date', 'username']).size().reset_index(name='Number of Posts')
 
 fig_date = px.line(date_line, x='date', y='Number of Posts', color='username',
-              title="Posts by Posting Date and Username",
               labels={'date': 'Date', 'Number of Posts': 'Number of Posts', 'username': 'Username'})
 
 
