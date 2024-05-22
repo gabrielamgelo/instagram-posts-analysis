@@ -42,7 +42,7 @@ def save_to_csv(posts_info, filename):
 
 
 usernames = ['usernames here']  
-# it's best to scrape at most 5 profiles at a time
+# It usually works best with at most 10 profiles at a time
 filename = "igposts.csv"
 
 
