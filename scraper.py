@@ -11,7 +11,7 @@ def get_posts_info(username):
     
     current_date = datetime.now()
     # Choosing the time period to scrape
-    until_date = current_date - timedelta(days=30)
+    until_date = current_date - timedelta(days=30) # Here you can change the time period to scrape
 
     for post in profile.get_posts():
         if post.date >= until_date:
@@ -40,8 +40,8 @@ def save_to_csv(posts_info, filename):
     df.to_csv(filename, index=False)
     
 
-# ExemplE of usernames:
-usernames = ['username here']  
+
+usernames = ['usernames here']  
 # it's best to scrape at most 5 profiles at a time
 filename = "igposts.csv"
 
