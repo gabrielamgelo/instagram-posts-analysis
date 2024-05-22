@@ -119,11 +119,6 @@ top_200_hashtags = counter_hashtags.most_common(200)
 
 df_top_200 = pd.DataFrame(top_200_hashtags, columns=['Hashtag', 'Times Used'])
 
-def remove_special_characters(text):
-    return re.sub(r'[^\w\sáéíóúÁÉÍÓÚâêîôÂÊÎÔãõÃÕàÀçÇ]', '', text)
-
-df_top_200['Hashtag'] = df_top_200['Hashtag'].apply(remove_special_characters)
-
 # Most liked hashtags
 
 dfh = pd.read_csv("Dataframes/hashtags_likes.csv")
